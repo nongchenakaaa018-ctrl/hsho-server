@@ -1,6 +1,6 @@
-# Home Sweet Home Online API — BY PHUPHA HEE YAI
+# Home Sweet Home Online API — BY NONGCHE
 
-API server project adapted from the supplied HSH Survive OBT2 server source and rebranded for **Home Sweet Home Online**. Built with Node.js, Express, and MongoDB; deployable to Render.
+API server project adapted from the supplied HSH ONLINE server source and rebranded for **Home Sweet Home Online**. Built with Node.js, Express, and MongoDB; deployable to Render.
 
 > **Compatibility notice:** The supplied source was originally structured for Survive OBT2. This package changes the server branding and maintains the existing `/live` game routes (plus the `/hshs` compatibility prefix). It has not been verified against a real Home Sweet Home Online client/protocol. Test with a copy of the game and compare request/response payloads before using it publicly.
 
