@@ -1,0 +1,81 @@
+{
+  "_help": "ของที่คุณขายเองในร้านค้า แก้ enabled=true เพื่อเปิดขาย, currency: coin|amethyst|amulet, items: shortCode จาก data/static/store/I_List.json (หรือ coin/amethyst/amulet เพื่อจ่ายเป็นเงิน), shelf: direct_sale_store|recommend_store|amulet_store|amethys_store|lootbox_store|webinflu_store, limitPerUser: null = ไม่จำกัด, startAt/endAt: วันที่ ISO (ไม่ใส่ = ขายตลอด) แก้แล้ว restart เซิร์ฟเวอร์ หรือ POST /live/store/admin/reload",
+  "bundles": [
+    {
+      "enabled": true,
+      "shortCode": "Bundle_RIN_Starter",
+      "title": "RIN Starter Pack",
+      "description": "5 Luck Pot + 1 Survivor",
+      "items": [
+        { "shortCode": "Default_Gacha", "amount": 5 },
+        { "shortCode": "Survivor_Jean", "amount": 1 }
+      ],
+      "currency": "coin",
+      "price": 1000,
+      "limitPerUser": 1,
+      "shelf": "recommend_store",
+      "tags": ["bundle", "recommend"],
+      "imageURL": ""
+    },
+    {
+      "enabled": true,
+      "shortCode": "Bundle_RIN_Amethyst",
+      "title": "Amethyst x1000",
+      "description": "แลก coin เป็น amethyst",
+      "items": [
+        { "shortCode": "amethyst", "amount": 1000 }
+      ],
+      "currency": "coin",
+      "price": 1000,
+      "limitPerUser": null,
+      "shelf": "direct_sale_store",
+      "tags": ["bundle", "currency"],
+      "imageURL": ""
+    },
+    {
+      "enabled": true,
+      "shortCode": "Bundle_RIN_Amulet",
+      "title": "Amulet x100",
+      "description": "แลก coin เป็น amulet",
+      "items": [
+        { "shortCode": "amulet", "amount": 100 }
+      ],
+      "currency": "coin",
+      "price": 1000,
+      "limitPerUser": null,
+      "shelf": "amulet_store",
+      "tags": ["bundle", "currency"],
+      "imageURL": ""
+    },
+    {
+      "enabled": true,
+      "shortCode": "Bundle_RIN_Skin",
+      "title": "Winter Scent (Hunter)",
+      "description": "ซื้อด้วย amethyst",
+      "items": [
+        { "shortCode": "Skin_Rigger_WinterScent", "amount": 1 }
+      ],
+      "currency": "amethyst",
+      "price": 500,
+      "limitPerUser": 1,
+      "shelf": "direct_sale_store",
+      "tags": ["bundle", "skin", "hunter"],
+      "imageURL": ""
+    },
+    {
+      "enabled": true,
+      "shortCode": "Bundle_RIN_LuckyAmulet",
+      "title": "Lucky Pot x10 (Amulet)",
+      "description": "ซื้อด้วย amulet",
+      "items": [
+        { "shortCode": "Default_Gacha", "amount": 10 }
+      ],
+      "currency": "amulet",
+      "price": 500,
+      "limitPerUser": null,
+      "shelf": "amulet_store",
+      "tags": ["bundle", "gacha"],
+      "imageURL": ""
+    }
+  ]
+}

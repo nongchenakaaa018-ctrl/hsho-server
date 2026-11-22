@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: home-sweet-home-online-api
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false
+      - key: MONGO_DB_NAME
+        value: hsho_online
+      - key: DB_DRIVER
+        value: mongo
+      - key: ADMIN_KEY
+        generateValue: true
+      - key: CORS_ORIGIN
+        value: "*"
